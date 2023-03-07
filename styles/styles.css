@@ -116,11 +116,13 @@ a {
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/herosection-bg.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
+	max-width: 1440px;
+	margin: 0 auto;
+	/* background-size: cover; */
 }
 
 .hero-section-title {
 	font-family: Roboto;
-	/* padding-top: 188px; */
 	margin-bottom: 48px;
 	margin-top: 0;
 	min-width: 496px;
@@ -182,6 +184,8 @@ h2 {
 footer {
 	background-color: var(--secondary-background-color);
 	color: #e7e9fc;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
 /* -------------------------------portfolio------------------------------------ */
@@ -235,6 +239,7 @@ footer {
 	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.08);
 
 	box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+	border-color: var(--hover-link-color);
 }
 
 /* -------------------FLEX-------------------- */
@@ -258,6 +263,8 @@ body {
 .fourth-section {
 	padding-top: 120px;
 	padding-bottom: 120px;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
 .our-team-title {
@@ -337,8 +344,8 @@ nav {
 
 .symbol-list-item {
 	display: flex;
-	height: 100%;
-	width: 100%;
+	height: 112px;
+	width: 264px;
 	background-color: #f4f4fd;
 	justify-content: center;
 	align-items: center;
@@ -346,6 +353,7 @@ nav {
 	margin-bottom: 8px;
 	/* background-color: aqua; */
 }
+
 /* ----------------------------------------------------------- */
 .main-paragraph {
 	width: 264px;
@@ -400,11 +408,9 @@ nav {
 
 .portfolios:hover,
 .portfolios:focus {
-	box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
-
-	box-shadow: 0px 1px 1px 0px rgba(46, 47, 66, 0.16);
-
-	box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+	            0px 1px 1px rgba(46, 47, 66, 0.16), 
+	            0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolios {
 	display: block;
